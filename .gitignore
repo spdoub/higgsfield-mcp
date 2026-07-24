@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.DS_Store
+npm-debug.log*
+.venv/
+venv/
+__pycache__/
+.next/
+.turbo/
+*.log
+toolchains/

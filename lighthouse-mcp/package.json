@@ -1,0 +1,42 @@
+{
+  "name": "lighthouse-mcp",
+  "version": "1.0.0",
+  "description": "MCP server to run Google Lighthouse audits against any URL",
+  "type": "module",
+  "bin": {
+    "lighthouse-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "lighthouse",
+    "performance",
+    "audit"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.19"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "chrome-launcher": "^1.2.1",
+    "lighthouse": "^13.1.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  }
+}
